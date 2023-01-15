@@ -55,11 +55,21 @@
     --color-primary: #217BF4;
     --color-secundary: #FFAF2E;
     --color-text: #0A093D;
-
+    --full-width: 1170px;
 }
 
 html {
     color: var(--color-text);
     font-family: 'Inter', sans-serif;
+}
 
+.header {
+    width: var(--full-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav {
+    display: flex;
+    gap: 72px;
 }
