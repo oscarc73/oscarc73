@@ -51,6 +51,15 @@
     isolation: isolate;
   }
 
+:root {
+    --color-primary: #217BF4;
+    --color-secundary: #FFAF2E;
+    --color-text: #0A093D;
+
+}
+
 html {
-    background-color: rgb(136, 226, 156);
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
+
 }
