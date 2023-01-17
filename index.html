@@ -12,27 +12,32 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__nav">
-            <img src="./images/logonetbook.svg" alt="This is the logo for Netbook company">
+     
+        <img src="./images/logonetbook.svg" alt="This is the logo for Netbook company" width="145" height="35"
+        />
             
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Events</a></li>
-                </ul>
-            </nav>
-        </div>
+         <nav class="header__nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
 
-        <div>
-        <input type="search"/>
-        <a href="/login">Log in</a>
+        <div class="header__actions">
+            <form class="header__search" action="search">
+                <img src="/images/ico_search.svg" alt="Icon of search color black" width="16" height="16"/>
+                <input type="search" aria-label="search" placeholder="Search here"/>
+                <a href="/login" class="btn">Log in</a>
+             </form>
         </div>
     </header>
 
     <main>
-        <section class="hero"></section>
+        <section class="hero">
+            <p>Hello world</p>
+        </section>
 
         <div class="clients"></div>
 
