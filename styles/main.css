@@ -118,6 +118,19 @@ a {
   border-radius: 16px;
 }
 
+/* button secundary */
+.btn__secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* variante de button */
+.btn--large {
+  height: 64px;
+  padding: 0 48px;
+}
+
 .header__actions {
   display: flex;
   gap: 48px;
@@ -141,4 +154,31 @@ a {
   display: flex;
   align-items: center;
   padding: 5rem 0;
+}
+
+.hero__title  {
+  font-size: .75rem;
+  background-color: var(--color-primary-10);
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  padding: 0 2rem;
+  height: 2rem;
+}
+
+.hero__subtitle {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 1.5rem 0;
+}
+
+.hero__description {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 16px;
 }
