@@ -75,6 +75,9 @@ a {
   color: var(--color-text);
 }
 
+.prime {
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+}
 .header {
   border-bottom: 1px solid var(--color-primary-10);
   padding: 1.5rem 0;
@@ -132,4 +135,10 @@ a {
 .header__search input {
   all: unset;
   width: 128px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
 }
