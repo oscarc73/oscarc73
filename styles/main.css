@@ -332,6 +332,10 @@ a {
   color: var(--color-primary);
 }
 
+.achievement .card a:hover svg path {
+  stroke: var(--color-primary);
+}
+
 /* .achievement .card a::after {
   position: absolute;
   right: 0;
