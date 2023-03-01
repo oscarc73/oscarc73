@@ -306,14 +306,20 @@ a {
   transform: translate(-4px, -4px);
 }
 
-.card.rating .card__title, .card.awards .card__title {
+.card.rating .card__title,
+.card.awards .card__title {
   display: flex;
   gap: .75rem;
   margin-bottom: 2.4375rem;
 }
 
-.achievement .card__subtitle strong {
+.achievement .card__subtitle b {
   color: var(--color-primary);
+}
+
+.card__subtitle {
+  display: flex;
+  
 }
 
 .achievement .card__content {
@@ -332,17 +338,24 @@ a {
   color: var(--color-primary);
 }
 
+/*configurar svg de iconos en tarjetas rating y awwwards*/
 .achievement .card a:hover svg path {
   stroke: var(--color-primary);
 }
 
-/* .achievement .card a::after {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  content: "";
-  background-image: url(/images/arrowblack.svg);
-  width: 10px;
-  height: 10px;
-} */
+.card_avatars{
+  display: inline-flex;
+  margin-right: 1rem;
+} 
+
+.card_avatars img {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.card_avatars img:not(:first-child) {
+  margin-left: -0.375rem;
+}
