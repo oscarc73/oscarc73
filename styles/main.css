@@ -326,7 +326,7 @@ p.section__subtitle {
 
 .card__subtitle {
   display: flex;
-  
+
 }
 
 .achievement .card__content {
@@ -350,10 +350,10 @@ p.section__subtitle {
   stroke: var(--color-primary);
 }
 
-.card_avatars{
+.card_avatars {
   display: inline-flex;
   margin-right: 1rem;
-} 
+}
 
 .card_avatars img {
   width: 24px;
@@ -375,4 +375,65 @@ p.section__subtitle {
 
 .achievement__content p:not(.section__subtitle) {
   margin: .25rem 0 2rem 0;
+}
+
+/*setion community*/
+.community {
+  background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
+}
+
+.community__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 2.5rem;
+}
+
+.community__card {
+  padding: 2.5rem 4.0625rem 2.75rem 2.5rem;
+  background-color: var(--color-white);
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+  border-radius: 1rem;
+  display: flex;
+  gap: 2.25rem;
+}
+
+.community__card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 66px;
+  height: 66px;
+  border-radius: 1.5rem;
+  aspect-ratio: 1/1;
+}
+
+.community__members .community__card-icon {
+  background: linear-gradient(154.49deg, #5CA1FE 6.61%, #217BF4 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
+}
+
+.community__groups .community__card-icon {
+  background: linear-gradient(154.49deg, #FF858A 6.61%, #F04148 89.72%);
+  box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3);
+}
+
+.community__forum .community__card-icon {
+  background: linear-gradient(154.49deg, #FFD085 6.61%, #FFAF2E 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
+}
+
+.community__custom .community__card-icon {
+  background: linear-gradient(154.49deg, #5CA1FE 6.61%, #217BF4 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
+}
+
+.community__builder .community__card-icon {
+  background: linear-gradient(154.49deg, #FF858A 6.61%, #F04148 89.72%);
+  box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3);
+}
+
+.community__scroll .community__card-icon {
+  background: linear-gradient(154.49deg, #FFD085 6.61%, #FFAF2E 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
 }
