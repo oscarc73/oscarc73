@@ -294,6 +294,7 @@ p.section__subtitle {
   grid-template-columns: 336px 336px 1fr;
   gap: 1.5rem;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
 .achievement .card {
@@ -380,6 +381,8 @@ p.section__subtitle {
 /*setion community*/
 .community {
   background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
+  padding: 5rem 0;
+  margin-bottom: 7.5rem;
 }
 
 .community__items {
@@ -395,6 +398,12 @@ p.section__subtitle {
   border-radius: 1rem;
   display: flex;
   gap: 2.25rem;
+}
+
+.community__content {
+  text-align: center;
+  width: 27.5625rem;
+  margin: 0 auto 4rem;
 }
 
 .community__card-icon {
@@ -436,4 +445,162 @@ p.section__subtitle {
 .community__scroll .community__card-icon {
   background: linear-gradient(154.49deg, #FFD085 6.61%, #FFAF2E 89.72%);
   box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
+}
+
+/*section team*/
+.team {
+  margin-bottom: 5rem;
+}
+
+.team__content {
+  width: 28.375rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team__tabs {
+  width: 29.625rem;
+  margin: 2.5rem auto;
+  background: var(--color-primary-10);
+  display: flex;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.team__tab {
+  height: 3.5rem;
+  display: inline-flex;
+  padding: 0 2rem;
+  align-items: center;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  flex-grow: 1;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.team__tab:hover {
+  color: var(--color-primary);
+}
+
+.team__tab--active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.team__tab--active:hover {
+  color: var(--color-white);
+}
+
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.team__member-card {
+  text-align: center;
+  background: #FFFFFF;
+  border: 2px solid rgba(243, 243, 243, 0.5);
+  border-radius: 1rem;
+  transition:
+    box-shadow 200ms ease-in-out,
+    transform 200ms ease-in-out;
+  padding: 2rem;
+}
+
+.team__member-card:hover {
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 1);
+  transform: translate(-4px, -4px);
+}
+
+.team__member-avatar {
+  position: relative;
+  display: inline-block;
+}
+
+.team__member-picture {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #E2EEFF;
+}
+
+.team__members-check {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  z-index: 1;
+}
+
+.team__member-name {
+  font-size: 1.5625rem;
+}
+
+/*section app*/
+.app {
+  background-color: #E5F0FD;
+  height: 35rem;
+  overflow: hidden;
+
+}
+
+.app .container {
+  display: grid;
+  grid-template-columns: 21.875rem 1fr;
+  align-items: center;
+  height: 560px;
+}
+
+.app__buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.app__buttons img {
+  border-radius: 0.5rem;
+  filter: drop-shadow(0px 0px 22px rgba(178, 188, 208, 0.21));
+}
+
+.app__screenshot {
+  position: relative;
+  align-self: end;
+  width: 341px;
+  margin-inline-start: auto;
+}
+
+.app__screenshot .app__screenshot-picture {
+  margin: 0;
+  filter: drop-shadow(0px 80px 250px rgba(0, 0, 0, 0.2));
+  position: relative;
+  z-index: 1;
+}
+
+.app__screenshot-circle-1,
+.app__screenshot-circle-2 {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  position: absolute;
+  left: -72px;
+}
+
+.app__screenshot-circle-1 {
+  background-color: rgba(252, 106, 101, 1);
+  bottom: 72px;
+}
+.app__screenshot-circle-2 {
+  background: rgba(72, 157, 146, 1);
+  bottom: -72px;
+}
+
+.app__screenshot-shine {
+  position: absolute;
+  right: -57px;
+  top: -57px;
 }
